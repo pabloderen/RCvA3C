@@ -16,7 +16,7 @@ namespace RCva3c
         /// <param name="inOpacity">Number in the range of 0.0 - 1.0 indicating how transparent the material is. A value of 0.0 indicates fully transparent, 1.0 is fully opaque.</param>
         /// <param name="inSmooth">Smooth edges between faces?  If false, mesh will appear faceted.</param>
         /// <returns></returns>
-        protected Material GenerateMeshLambertMaterial(Color inColor, Color inAmbient, Color inEmissive, double inOpacity, bool inSmooth)
+        public Material GenerateMeshLambertMaterial(Color inColor, Color inAmbient, Color inEmissive, double inOpacity, bool inSmooth)
         {
             if(inAmbient == null)
             {

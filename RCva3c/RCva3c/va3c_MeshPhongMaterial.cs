@@ -17,7 +17,7 @@ namespace RCva3c
         /// <param name="inShininess">How shiny the specular highlight is; a higher value gives a sharper highlight. Default is 30</param>
         /// <param name="inOpacity">Number in the range of 0.0 - 1.0 indicating how transparent the material is. A value of 0.0 indicates fully transparent, 1.0 is fully opaque.</param>
         /// <returns></returns>
-        protected Material GeneratePhongMaterial(Color inColor, Color inAmbient, Color inEmissive, Color inSpecular, double inShininess, double inOpacity)
+        public Material GeneratePhongMaterial(Color inColor, Color inAmbient, Color inEmissive, Color inSpecular, double inShininess, double inOpacity)
         {
             if (inAmbient == null)
             {

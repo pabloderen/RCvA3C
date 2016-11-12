@@ -13,7 +13,7 @@ namespace RCva3c
         /// </summary>
         /// <param name="inElements">va3c Elements to add to the scene.</param>
         /// <returns></returns>
-        protected string GenerateSceneJson(List<Element> inElements)
+        public string GenerateSceneJson(List<Element> inElements)
         {
             if (inElements == null)
             {

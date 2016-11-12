@@ -15,7 +15,7 @@ namespace RCva3c
         /// <param name="attributeValues">Attribute Values</param>
         /// <param name="layerName">Layer</param>
         /// <returns></returns>
-        protected Element GenerateMeshElement( Mesh mesh, Material material, List<string> attributeNames, List<string> attributeValues, string layerName = "Default")
+        public Element GenerateMeshElement( Mesh mesh, Material material, List<string> attributeNames, List<string> attributeValues, string layerName = "Default")
         {
             attributeNames = new List<string>();
             attributeValues = new List<string>();

@@ -16,7 +16,7 @@ namespace RCva3c
         /// <param name="attributeValues"></param>
         /// <param name="geoJson"></param>
         /// <param name="materialWithVertexColors"></param>
-        protected void GenerateJsonAndMeshColoredFaces(Mesh mesh, List<string> attributeNames, List<string> attributeValues, out string geoJson, out string materialWithVertexColors)
+        public void GenerateJsonAndMeshColoredFaces(Mesh mesh, List<string> attributeNames, List<string> attributeValues, out string geoJson, out string materialWithVertexColors)
         {
             //local varaibles
             attributeNames = new List<string>();

@@ -14,7 +14,7 @@ namespace RCva3c
         /// <param name="target">Position of the target</param>
         /// <param name="name">Name of this camera</param>
         /// <returns></returns>
-        protected Element GenerateViewElement(Point3d eye, Point3d target, string name = "")
+        public Element GenerateViewElement(Point3d eye, Point3d target, string name = "")
         {
             //get user inputs
             //user should be able to create a scene contianing only lines, or only meshes, or both.  All geo and material inputs will be optional, and we'll run some defense.

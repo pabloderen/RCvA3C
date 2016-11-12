@@ -7,7 +7,7 @@ namespace RCva3c
 {
     public class va3c_LineBasicMaterial
     {
-        protected Material GenerateMaterial( Color inColor, double inNumber = 1.0)
+        public Material GenerateMaterial( Color inColor, double inNumber = 1.0)
         {
             //spin up a JSON material
             string outJSON = ConstructMaterial(inColor, inNumber);

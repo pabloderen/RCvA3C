@@ -19,7 +19,7 @@ namespace RCva3c
         /// <param name="attributeValues">Attribute Values</param>
         /// <param name="layerName">Layer</param>
         /// <returns></returns>
-        protected Element GenerateMeshColoredFacesEelement(Mesh mesh, List<Color> colors, List<string> attributeNames, List<string> attributeValues, string layerName = "Default")
+        public Element GenerateMeshColoredFacesEelement(Mesh mesh, List<Color> colors, List<string> attributeNames, List<string> attributeValues, string layerName = "Default")
         {
             //local varaibles
             attributeNames = new List<string>();

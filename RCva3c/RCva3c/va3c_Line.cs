@@ -8,7 +8,7 @@ namespace RCva3c
 {
     public class va3c_Line
     {
-        protected Element GenerateLineElement(Line line, Material material, Layer layer, string layerName = "Default")
+        public Element GenerateLineElement(Line line, Material material, Layer layer, string layerName = "Default")
         {
             Element result = null;
 

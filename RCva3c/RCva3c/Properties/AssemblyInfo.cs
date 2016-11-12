@@ -1,8 +1,6 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using Rhino.PlugIns;
-
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
@@ -12,7 +10,7 @@ using Rhino.PlugIns;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("RCva3c")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -22,7 +20,7 @@ using Rhino.PlugIns;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d499ea54-eaab-4920-b388-b1ccb086cee6")] // This will also be the Guid of the Rhino plug-in
+[assembly: Guid("f36ba6b4-38b5-4477-9a20-b6bff3b8cf9b")]
 
 // Version information for an assembly consists of the following four values:
 //

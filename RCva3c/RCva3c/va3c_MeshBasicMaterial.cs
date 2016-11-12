@@ -13,7 +13,7 @@ namespace RCva3c
         /// <param name="inColor"></param>
         /// <param name="inOpacity"></param>
         /// <returns></returns>
-        protected Material GenerateMaterial(Color inColor, double inOpacity = 1)
+        public Material GenerateMaterial(Color inColor, double inOpacity = 1)
         {
             string outMaterial = null;
             if (inColor == null) { return null; }
