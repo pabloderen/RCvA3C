@@ -1,3 +1,13 @@
+RCvA3c
+======
+
+RCvA3c is RhinoCommon implementation of vA3c idea. Library generates json format strings for three.js.
+RCvA3c is based on GHvA3c, a Rhino Grasshopper plugin library.
+Matas Ubarevicius only refactored the code to loose Grasshopper references and componential boilerplate.
+RCvA3c thus can be used just by referencing RhinoCommon projects as utility library.
+
+More info about GHvA3C below:
+
 GHvA3C
 ======
 
