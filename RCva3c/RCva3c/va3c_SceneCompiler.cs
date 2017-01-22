@@ -105,7 +105,7 @@ namespace RCva3c
             jason.metadata = new ExpandoObject();
             jason.metadata.version = 4.3;
             jason.metadata.type = "Object";
-            jason.metadata.generator = "vA3C_Grasshopper_Exporter";
+            jason.metadata.generator = "RCva3c_Rhinocommon_Exporter";
 
             int size = meshList.Count + linesList.Count;
 
