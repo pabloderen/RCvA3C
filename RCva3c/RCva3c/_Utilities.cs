@@ -106,7 +106,7 @@ namespace RCva3c
                 i = 0;
                 foreach (var c in mesh.VertexColors)
                 {
-                    jason.data.colors[i] = _Utilities.hexColor(c);
+                    jason.data.colors[i] = _Utilities.ToIntColor(c);
                     i++;
                 }
             }
@@ -121,6 +121,12 @@ namespace RCva3c
 
 
             return JsonConvert.SerializeObject(jason);
+        }
+
+        internal static int ToIntColor(Color col)
+        {
+            Int32 key = col.R << 16 | col.G << 8 | col.B;
+            return key;
         }
     }
 

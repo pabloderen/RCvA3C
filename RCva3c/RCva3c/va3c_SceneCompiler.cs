@@ -13,7 +13,7 @@ namespace RCva3c
         /// </summary>
         /// <param name="inElements">va3c Elements to add to the scene.</param>
         /// <returns></returns>
-        public string GenerateSceneJson(List<Element> inElements)
+        public string GenerateSceneJson(string name, List<Element> inElements)
         {
             if (inElements == null)
             {
@@ -90,12 +90,12 @@ namespace RCva3c
             //compile geometry + materials into one JSON object with metadata etc.
             //https://raw.githubusercontent.com/mrdoob/three.js/master/examples/obj/blenderscene/scene.js
             //create json from lists of json:
-            string outJSON = sceneJSON(inMeshGeometry, inMeshMaterial, inMeshLayer, inLineGeometry, inLineMaterial, inLineLayer, inViews, definitionLayers);
+            string outJSON = sceneJSON(name, inMeshGeometry, inMeshMaterial, inMeshLayer, inLineGeometry, inLineMaterial, inLineLayer, inViews, definitionLayers);
             outJSON = outJSON.Replace("OOO", "object");
             return outJSON;
         }
 
-        private string sceneJSON(List<string> meshList, List<string> meshMaterialList, List<string> meshLayerList, List<string> linesList, List<string> linesMaterialList, List<string> lineLayerList, List<string> viewList, Dictionary<string, List<Element>> defLayers)
+        private string sceneJSON(string name ,List<string> meshList, List<string> meshMaterialList, List<string> meshLayerList, List<string> linesList, List<string> linesMaterialList, List<string> lineLayerList, List<string> viewList, Dictionary<string, List<Element>> defLayers)
         {
 
             //create a dynamic object to populate
@@ -327,6 +327,7 @@ namespace RCva3c
             #endregion
 
             jason.OOO = new ExpandoObject();
+            jason.OOO.name = name;
             //create scene:
             jason.OOO.uuid = System.Guid.NewGuid();
             jason.OOO.type = "Scene";

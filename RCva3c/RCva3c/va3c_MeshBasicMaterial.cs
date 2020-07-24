@@ -34,7 +34,7 @@ namespace RCva3c
             dynamic jason = new ExpandoObject();
             jason.uuid = Guid.NewGuid();
             jason.type = "MeshBasicMaterial";
-            jason.color = _Utilities.hexColor(inColor);
+            jason.color = _Utilities.ToIntColor(inColor);
             jason.side = 2;
             if (inOpacity < 1)
             {

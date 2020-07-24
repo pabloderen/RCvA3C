@@ -78,7 +78,7 @@ namespace RCva3c
 
             //since some faces might share a material, we'll keep a local dict of materials to avoid duplicates
             //key = hex color, value = int representing a material index
-            Dictionary<string, int> faceMaterials = new Dictionary<string, int>();
+            Dictionary<int, int> faceMaterials = new Dictionary<int, int>();
 
             //we'll loop over the mesh to make sure that each quad is assigned two material indexes
             //since it is really two triangles as a three.js mesh.  If there are fewer colors than mesh faces, we'll take the last material
@@ -93,7 +93,7 @@ namespace RCva3c
                 }
 
                 //get a string representation of the color
-                string myColorStr = _Utilities.hexColor(colors[matCounter]);
+                int myColorStr = _Utilities.ToIntColor(colors[matCounter]);
 
                 //check to see if we need to create a new material index
                 if (!faceMaterials.ContainsKey(myColorStr))

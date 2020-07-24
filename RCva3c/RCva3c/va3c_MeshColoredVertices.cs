@@ -43,7 +43,7 @@ namespace RCva3c
 
             JsonMat.uuid = Guid.NewGuid();
             JsonMat.type = "MeshLambertMaterial";
-            JsonMat.color = _Utilities.hexColor(System.Drawing.Color.White);
+            JsonMat.color = _Utilities.ToIntColor(System.Drawing.Color.White);
             JsonMat.side = 2;
             JsonMat.vertexColors = 1;
             return JsonConvert.SerializeObject(JsonMat);

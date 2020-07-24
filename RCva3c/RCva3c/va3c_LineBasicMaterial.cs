@@ -24,7 +24,7 @@ namespace RCva3c
             //JSON properties
             jason.uuid = Guid.NewGuid();
             jason.type = "LineBasicMaterial";
-            jason.color = _Utilities.hexColor(inColor);
+            jason.color = _Utilities.ToIntColor(inColor);
             jason.linewidth = inNumber;
             jason.opacity = 1;
 

@@ -52,15 +52,15 @@ namespace RCva3c
 
             jason.uuid = uuid;
             jason.type = "MeshPhongMaterial";
-            jason.color = _Utilities.hexColor(col);
-            jason.ambient = _Utilities.hexColor(amb);
-            jason.emissive = _Utilities.hexColor(em);
-            jason.specular = _Utilities.hexColor(spec);
+            jason.color = _Utilities.ToIntColor(col);
+            jason.ambient = _Utilities.ToIntColor(amb);
+            jason.emissive = _Utilities.ToIntColor(em);
+            jason.specular = _Utilities.ToIntColor(spec);
             jason.shininess = shin;
+            jason.opacity = opp;
             if (opp < 1)
             {
                 jason.transparent = true;
-                jason.opacity = opp;
             }
             jason.wireframe = false;
             jason.side = 2;

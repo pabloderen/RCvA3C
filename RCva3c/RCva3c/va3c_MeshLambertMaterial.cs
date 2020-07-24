@@ -46,9 +46,9 @@ namespace RCva3c
 
             jason.uuid = Guid.NewGuid();
             jason.type = "MeshLambertMaterial";
-            jason.color = _Utilities.hexColor(col);
-            jason.ambient = _Utilities.hexColor(amb);
-            jason.emissive = _Utilities.hexColor(em);
+            jason.color = _Utilities.ToIntColor(col);
+            jason.ambient = _Utilities.ToIntColor(amb);
+            jason.emissive = _Utilities.ToIntColor(em);
             if (opp < 1)
             {
                 jason.transparent = true;
